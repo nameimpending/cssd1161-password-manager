@@ -1,5 +1,12 @@
 # cssd1161-password-manager
-One line summary: This is the repo for our online password manager software.
 
-----====----
-This Read me decribes what data we will be 
+**Project**
+- [Wiki Home](../../wiki)
+- [Design (Wiki)](../../wiki/Design)
+- [Proposal (wiki)](../../wiki/Proposal)
+
+**In-Repo Drafts (reviewed via PRs)**
+- [Design: User Stories & Acceptance](docs/design/user-stories.md)
+- [Design: Architecture & Components](docs/design/architecture.md)
+- [Design: DAta & Content](docs/design/data-content.md)
+- [Design: Risks & Constraints](docs/design/risks-constraints.md)
