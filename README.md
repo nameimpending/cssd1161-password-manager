@@ -1,7 +1,6 @@
 # cssd1161-password-manager
 
 **Project**
-- **Wiki**
 - [Wiki Home](../../wiki)
 - [Design (Wiki)](../../wiki/Design)
 - [Proposal (wiki)](../../wiki/Proposal)
