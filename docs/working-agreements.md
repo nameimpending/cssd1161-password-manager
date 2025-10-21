@@ -1,0 +1,3 @@
+- Channel norms: Quick updates on Whatsapp, important info archived on Teams.
+- Response time norms: Try to respond within 24 hours, and make sure to stay on top of deadlines
+- PR Tone: Just make sure it is informative, as long as the PR says what you changed it should be okay.
