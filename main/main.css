@@ -1,0 +1,17 @@
+.titleBlock{
+    color: darkgreen;
+    text-align: center;
+    font-size: 32px;
+    word-wrap: break-word;
+    white-space: normal;
+    width: 20%;
+    margin: auto;
+}
+
+#login_box {
+    margin: auto; 
+    width: 20%; 
+    border: 3px solid greenyellow; 
+    padding: 10px; 
+    text-align: center;
+}
