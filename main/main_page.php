@@ -7,8 +7,11 @@
     </head>
 
     <body>
+    <p>
+        Welcome to the main page, <?php echo htmlspecialchars($_POST["username"]) . " !"; ?>
+    </p>
         <?php
-
+        
         ?>
 
     </body>

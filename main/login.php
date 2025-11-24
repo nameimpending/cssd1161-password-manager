@@ -1,8 +1,12 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html>
 
     <head>
-        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="css/main.css">
         <title>Password Main-ager Login</title>
     </head>
 
@@ -22,8 +26,5 @@
 
         <input type ="submit">
     </form>
-    Welcome <?php echo $_POST["user_entry"]; ?><br>
-    Your password is: <?php echo $_POST["pass_entry"]; ?>
-    
     </body>
 </html>

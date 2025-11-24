@@ -16,3 +16,8 @@ CREATE TABLE comments (
     PRIMARY KEY (id),
     FOREIGN KEY (users_id) REFERENCES users (id) ON DELETE SET NULL
 );
+
+
+
+INSERT INTO users(username, pwd, email) VALUES ('MyUsername', 'MyPassword', 'MyEmail@gmail.com');
+UPDATE users SET username = 'MyChangedUser', pwd = 'MyChangedPwd' WHERE id = 2
