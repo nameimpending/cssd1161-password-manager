@@ -1,12 +1,17 @@
 <?php
+require_once 'config.inc.php';
 
-$dsn = "mysql:host=localhost;dbname=testing_database";
+$host = 'localhost'; // Must be changed on a live server
+$dbname = 'main_database';
 $dbusername = "root";
 $dbpassword = "";
 
 try {
-    $pdo = new PDO($dsn, $dbusername, $dbpassword);
+    // Login
+    $pdo = new PDO("mysql:host=$host;dbname=$dbname", $dbusername, $dbpassword);
+    // Error handling
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (PDOException $e) {
-    echo "Connection failed: " . $e->getMessage();
+    die("Connection failed: " . $e->getMessage());
 }
+

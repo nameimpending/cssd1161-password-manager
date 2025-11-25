@@ -1,3 +1,7 @@
+<?php
+require_once 'includes/config.inc.php';
+?>
+
 <head>
     <title>Signup</title>
 </head>

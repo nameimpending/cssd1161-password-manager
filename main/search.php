@@ -1,4 +1,6 @@
-<?php 
+<?php
+require_once 'includes/config.inc.php';
+?>
 
 if ($_SERVER["REQUEST_METHOD"] == "POST")
 {
