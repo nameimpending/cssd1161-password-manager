@@ -1,4 +1,5 @@
 <?php
+require_once 'config.inc.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST")
 {
@@ -14,8 +15,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         $query = "INSERT INTO users (username, pwd, email) VALUES (:username, :pwd, :email);";
         //$stmt = statement
         $stmt = $pdo -> prepare($query);
+
+        $options = [
+            'cost' => 12 // Set the processing cost for a hasehd password
+        ];
+        
+        $hashedPwd = password_hash($pwd, PASSWORD_BCRYPT, $options);
+        
+
         $stmt -> bindParam(":username", $username);
-        $stmt -> bindParam(":pwd", $pwd);
+        $stmt -> bindParam(":pwd", $hashedPwd);
         $stmt -> bindParam(":email", $email);
         $stmt -> execute();
         

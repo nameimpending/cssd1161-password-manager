@@ -1,3 +1,5 @@
+-- These sql commands should be run on the main database.
+
 CREATE TABLE users (
 	id INT(11) NOT NULL AUTO_INCREMENT,
     username VARCHAR(30) NOT NULL,
@@ -7,6 +9,7 @@ CREATE TABLE users (
     PRIMARY KEY (id)
 );
 
+-- Placeholder 
 CREATE TABLE comments (
 	id INT(11) NOT NULL AUTO_INCREMENT,
     username VARCHAR(30) NOT NULL,
@@ -18,6 +21,7 @@ CREATE TABLE comments (
 );
 
 
-
+-- Placeholder
 INSERT INTO users(username, pwd, email) VALUES ('MyUsername', 'MyPassword', 'MyEmail@gmail.com');
 UPDATE users SET username = 'MyChangedUser', pwd = 'MyChangedPwd' WHERE id = 2
+INSERT INTO comments (username, comment_text, users_id) VALUES ('MyUsername', 'This is my awesome comment', 1);
